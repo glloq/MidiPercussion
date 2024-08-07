@@ -59,14 +59,21 @@ a way to make a midi controled percusion system with solenoids an servomotors
 On va utiliser des solenoides pour toutes actions simple qui n'ont pas besoin d'etre maintenue activé (pour eviter les surchauffes) 
 nous utiliserons des PCA9685 pour moduler la puissance de frappe des solenoides.
 
-Pour toute action qui necessite le maintient d'un changement d'etat, nous utiliserons des servomoteurs (position Hat? + sifflet )
+Pour toute action qui necessite le maintient d'un changement d'etat, nous utiliserons des servomoteurs (position Hat? + sifflet + maracas ?) => pas aussi rapide que les solenoides et complexifie le code .... 
 
 ### Choix mecanique 
+
+#### Baguettes
 
 il y a plusieurs facons de faire l'assemblage des baguettes mais il y a plusieurs contraintes a respecter :
 - temps pour action => le temps/ deplacement necessaire pour actionner la note
 - le temps entre 2 actions => temps minimum entre deux actions
 - le bruit du solenoide => il faut utiliser un systeme pour amortir le retour de baguette
-- il faut permettre une maintenance rapide => remplacement de baguette etc 
+- il faut permettre une maintenance rapide => reglage de l'angle, remplacement de baguette etc
+
+  
+#### siffet 
+
+
 
   
