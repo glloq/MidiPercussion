@@ -75,5 +75,14 @@ il y a plusieurs facons de faire l'assemblage des baguettes mais il y a plusieur
 #### siffet 
 
 
+## Partie code
+
+Un solenoide sera controlé via le pca9685 pour moduler la puissance de frappe en fonction de la velocité de la note midi recue.
+Chaque note midi jouable est declaré avec toutes les information necessaire (numeroMidi,numero pin sortie, temps actif, min PWM, etc...)
+en fonction du montage mecanique et des solenoides, il faudra surement doubler certain solenoides afin d'ateindre un rythme elevé => a verifier !
+
+
+
+
 
   
