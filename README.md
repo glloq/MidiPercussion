@@ -1,3 +1,7 @@
+> [!NOTE]
+> rien n'est fait ni testé, c'est un debut de travail!
+
+
 # MidiPercussion
 a way to make a midi controled percusion system with solenoids an servomotors
 
@@ -57,9 +61,14 @@ a way to make a midi controled percusion system with solenoids an servomotors
 ## Actionneurs 
 
 On va utiliser des solenoides pour toutes actions simple qui n'ont pas besoin d'etre maintenue activé (pour eviter les surchauffes) 
-nous utiliserons des PCA9685 pour moduler la puissance de frappe des solenoides.
 
-Pour toute action qui necessite le maintient d'un changement d'etat, nous utiliserons des servomoteurs (position Hat? + sifflet + maracas ?) => pas aussi rapide que les solenoides et complexifie le code .... 
+Pour toute action qui necessite le maintient d'un changement d'etat, nous utiliserons des servomoteurs (position Hat? + sifflet + maracas ?) => pas aussi rapide que les solenoides et complexifie le code ....  <=== a voir !!
+
+### Schemas branchement
+
+Nous devrons etre capable de faire varier la puissance de frappe de chacune des percussions, il faut donc varier l'alimentation a l'aide de pca9685.
+l'idée est de simplement d' atribuer une sortie pour une ou plusieurs note midi,les sorties 0 a 15 seront gerré par le pca1, les sorties 16 a 32 seront géré par le pca2 etc...
+
 
 ### Choix mecanique 
 
