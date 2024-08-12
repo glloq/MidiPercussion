@@ -33,30 +33,30 @@ a way to make a midi controled percusion system with solenoids an servomotors
 | 55          | Splash Cymbal            | :heavy_check_mark: 14 |
 | 56          | Cowbell                  |:heavy_check_mark: 15 |
 | 57          | Crash Cymbal 2           |:heavy_check_mark: 10 |
-| 58          | Vibraslap                |:heavy_check_mark: 16 |
+| 58          | Vibraslap                | |
 | 59          | Ride Cymbal 2            |:heavy_check_mark: 12 |
-| 60          | Hi Bongo                 |
-| 61          | Low Bongo                |
-| 62          | Mute Hi Conga            |
-| 63          | Open Hi Conga            |
-| 64          | Low Conga                |
-| 65          | High Timbale             |
-| 66          | Low Timbale              |
-| 67          | High Agogo               |
-| 68          | Low Agogo                |
-| 69          | Cabasa                   |
-| 70          | Maracas                  |
-| 71          | Short Whistle            |
-| 72          | Long Whistle             |
-| 73          | Short Guiro              |
-| 74          | Long Guiro               |
-| 75          | Claves                   |
-| 76          | Hi Wood Block            |
-| 77          | Low Wood Block           |
-| 78          | Mute Cuica               |
-| 79          | Open Cuica               |
-| 80          | Mute Triangle            |
-| 81          | Open Triangle            |
+| 60          | Hi Bongo                 | |
+| 61          | Low Bongo                | |
+| 62          | Mute Hi Conga            | |
+| 63          | Open Hi Conga            | |
+| 64          | Low Conga                | |
+| 65          | High Timbale             | |
+| 66          | Low Timbale              | |
+| 67          | High Agogo               | |
+| 68          | Low Agogo                | |
+| 69          | Cabasa                   | |
+| 70          | Maracas                  | 16 |
+| 71          | Short Whistle            | |
+| 72          | Long Whistle             | |
+| 73          | Short Guiro              | |
+| 74          | Long Guiro               | |
+| 75          | Claves                   | |
+| 76          | Hi Wood Block            | 17 |
+| 77          | Low Wood Block           | 18 |
+| 78          | Mute Cuica               | |
+| 79          | Open Cuica               | |
+| 80          | Mute Triangle            | 19 |
+| 81          | Open Triangle            | 20 |
 
 ## Actionneurs 
 
@@ -81,8 +81,7 @@ il y a plusieurs facons de faire l'assemblage des baguettes mais il y a plusieur
 - le bruit du solenoide => il faut utiliser un systeme pour amortir le retour de baguette
 - il faut permettre une maintenance rapide => reglage de l'angle, remplacement de baguette etc
 
-  
-#### siffet 
+  ![Schema baguettes](https://raw.githubusercontent.com/glloq/MidiPercussion/main/img/baguette.png?raw=true)
 
 
 ## Partie code
