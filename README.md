@@ -10,27 +10,27 @@ a way to make a midi controled percusion system with solenoids an servomotors
 
 | Numéro MIDI | Instrument              |
 |-------------|--------------------------|
-| 35          | Acoustic Bass Drum       |
-| 36          | Bass Drum 1              |
-| 37          | Side Stick               |
-| 38          | Acoustic Snare           |
+| 35          | :heavy_check_mark: Acoustic Bass Drum       |
+| 36          | :heavy_check_mark:Bass Drum 1              |
+| 37          | :heavy_check_mark:Side Stick               |
+| 38          | :heavy_check_mark:Acoustic Snare           |
 | 39          | Hand Clap                |
-| 40          | Electric Snare           |
-| 41          | Low Floor Tom            |
-| 42          | Closed Hi-Hat            |
-| 43          | High Floor Tom           |
-| 44          | Pedal Hi-Hat             |
-| 45          | Low Tom                  |
-| 46          | Open Hi-Hat              |
-| 47          | Low-Mid Tom              |
-| 48          | Hi-Mid Tom               |
-| 49          | Crash Cymbal 1           |
-| 50          | High Tom                 |
-| 51          | Ride Cymbal 1            |
-| 52          | Chinese Cymbal           |
-| 53          | Ride Bell                |
+| 40          | :heavy_check_mark:Electric Snare           |
+| 41          | :heavy_check_mark:Low Floor Tom            |
+| 42          |:heavy_check_mark: Closed Hi-Hat            |
+| 43          | :heavy_check_mark:High Floor Tom           |
+| 44          | :heavy_check_mark:Pedal Hi-Hat             |
+| 45          | :heavy_check_mark:Low Tom                  |
+| 46          | :heavy_check_mark:Open Hi-Hat              |
+| 47          | :heavy_check_mark:Low-Mid Tom              |
+| 48          | :heavy_check_mark:Hi-Mid Tom               |
+| 49          | :heavy_check_mark:Crash Cymbal 1           |
+| 50          | :heavy_check_mark:High Tom                 |
+| 51          | :heavy_check_mark:Ride Cymbal 1            |
+| 52          | :heavy_check_mark:Chinese Cymbal           |
+| 53          | :heavy_check_mark:Ride Bell                |
 | 54          | Tambourine               |
-| 55          | Splash Cymbal            |
+| 55          |:heavy_check_mark: Splash Cymbal            |
 | 56          | Cowbell                  |
 | 57          | Crash Cymbal 2           |
 | 58          | Vibraslap                |
