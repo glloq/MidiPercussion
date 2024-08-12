@@ -8,33 +8,33 @@ a way to make a midi controled percusion system with solenoids an servomotors
 
 # Percussion Standard GM (Canal 10)
 
-| Numéro MIDI | Instrument              |
-|-------------|--------------------------|
-| 35          | :heavy_check_mark: Acoustic Bass Drum       |
-| 36          | :heavy_check_mark:Bass Drum 1              |
-| 37          | :heavy_check_mark:Side Stick               |
-| 38          | :heavy_check_mark:Acoustic Snare           |
-| 39          | Hand Clap                |
-| 40          | :heavy_check_mark:Electric Snare           |
-| 41          | :heavy_check_mark:Low Floor Tom            |
-| 42          |:heavy_check_mark: Closed Hi-Hat            |
-| 43          | :heavy_check_mark:High Floor Tom           |
-| 44          | :heavy_check_mark:Pedal Hi-Hat             |
-| 45          | :heavy_check_mark:Low Tom                  |
-| 46          | :heavy_check_mark:Open Hi-Hat              |
-| 47          | :heavy_check_mark:Low-Mid Tom              |
-| 48          | :heavy_check_mark:Hi-Mid Tom               |
-| 49          | :heavy_check_mark:Crash Cymbal 1           |
-| 50          | :heavy_check_mark:High Tom                 |
-| 51          | :heavy_check_mark:Ride Cymbal 1            |
-| 52          | :heavy_check_mark:Chinese Cymbal           |
-| 53          | :heavy_check_mark:Ride Bell                |
-| 54          | Tambourine               |
-| 55          |:heavy_check_mark: Splash Cymbal            |
-| 56          | Cowbell                  |
-| 57          | Crash Cymbal 2           |
-| 58          | Vibraslap                |
-| 59          | Ride Cymbal 2            |
+| Numéro MIDI | Instrument              | exemple pca output number |
+|-------------|--------------------------|-------------------------|
+| 35          | Acoustic Bass Drum       |:heavy_check_mark: 0 |
+| 36          | Bass Drum 1              |:heavy_check_mark: 0 |
+| 37          | Side Stick               | :heavy_check_mark: 1 |
+| 38          | Acoustic Snare           | :heavy_check_mark: 2 |
+| 39          | Hand Clap                | :heavy_check_mark: 3 |
+| 40          | Electric Snare           | :heavy_check_mark: 2 |
+| 41          | Low Floor Tom            | :heavy_check_mark: 3 |
+| 42          | Closed Hi-Hat            | :heavy_check_mark: 4 |
+| 43          | High Floor Tom           | :heavy_check_mark: 5 |
+| 44          | Pedal Hi-Hat             | :heavy_check_mark: 6 |
+| 45          | Low Tom                  | :heavy_check_mark: 3 |
+| 46          | Open Hi-Hat              | :heavy_check_mark: 7 |
+| 47          | Low-Mid Tom              | :heavy_check_mark: 8 |
+| 48          | Hi-Mid Tom               | :heavy_check_mark: 9 |
+| 49          | Crash Cymbal 1           | :heavy_check_mark: 10 |
+| 50          | High Tom                 | :heavy_check_mark: 11 |
+| 51          | Ride Cymbal 1            | :heavy_check_mark: 12 |
+| 52          | Chinese Cymbal           | :heavy_check_mark: 11 |
+| 53          | Ride Bell                | :heavy_check_mark: 12 |
+| 54          | Tambourine               |:heavy_check_mark: 13 |
+| 55          | Splash Cymbal            | :heavy_check_mark: 14 |
+| 56          | Cowbell                  |:heavy_check_mark: 15 |
+| 57          | Crash Cymbal 2           |:heavy_check_mark: 10 |
+| 58          | Vibraslap                |:heavy_check_mark: 16 |
+| 59          | Ride Cymbal 2            |:heavy_check_mark: 12 |
 | 60          | Hi Bongo                 |
 | 61          | Low Bongo                |
 | 62          | Mute Hi Conga            |
