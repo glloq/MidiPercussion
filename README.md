@@ -58,7 +58,6 @@ a way to make a midi controled percusion system with solenoids an servomotors
 | 80          | Mute Triangle            | 19 |
 | 81          | Open Triangle            | 20 |
 
-![Schema percu](https://raw.githubusercontent.com/glloq/MidiPercussion/main/img/percu1.png?raw=true)
 
 ## Actionneurs 
 
