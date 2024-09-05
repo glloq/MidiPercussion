@@ -1,3 +1,4 @@
+
 > [!NOTE]
 > rien n'est fait ni testé, c'est un debut de travail!
 
@@ -88,8 +89,21 @@ il y a plusieurs facons de faire l'assemblage des baguettes mais il y a plusieur
 ## Partie code
 
 Un solenoide sera controlé via le pca9685 pour moduler la puissance de frappe en fonction de la velocité de la note midi recue.
-Chaque note midi jouable est declaré avec toutes les information necessaire (numeroMidi,numero pin sortie, temps actif, min PWM, etc...)
-en fonction du montage mecanique et des solenoides, il faudra surement doubler certain solenoides afin d'ateindre un rythme elevé => a verifier !
+    
+Pour permettre une adaptation simple, nous utiliserons une structure pour regroupper toutes les information pour chacune des sorties/note midi.
+
+'''
+struc midiNote{
+  byte midiNumber;      // Numéro de note MIDI (0 à 127 pour les percussions)
+  byte outputPin;       // Numéro de pin du PCA9685 pour la sortie
+  byte pcaAddress;      // Adresse I2C du PCA9685 (0x40 par défaut, mais peut changer)
+  int pwmMin;           // Valeur minimale du signal PWM (par exemple, 1000)
+  unsigned long activeTime; // Temps actif max (en millisecondes) de la sortie lorsqu'elle est activée
+  bool isActive;        // Statut indiquant si la sortie est actuellement active ou non
+
+}
+'''
+avec cette organisation nous pouvons simplement declarer les differentes notes percussion et leurs parametres.
 
 
 
