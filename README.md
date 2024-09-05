@@ -91,8 +91,7 @@ il y a plusieurs facons de faire l'assemblage des baguettes mais il y a plusieur
 Un solenoide sera controlé via le pca9685 pour moduler la puissance de frappe en fonction de la velocité de la note midi recue.
     
 Pour permettre une adaptation simple, nous utiliserons une structure pour regroupper toutes les information pour chacune des sorties/note midi.
-
-'''
+```
 struc midiNote{
   byte midiNumber;      // Numéro de note MIDI (0 à 127 pour les percussions)
   byte outputPin;       // Numéro de pin du PCA9685 pour la sortie
@@ -102,7 +101,9 @@ struc midiNote{
   bool isActive;        // Statut indiquant si la sortie est actuellement active ou non
 
 }
-'''
+
+```
+
 avec cette organisation nous pouvons simplement declarer les differentes notes percussion et leurs parametres.
 
 
