@@ -70,7 +70,7 @@ Pour toute action qui necessite le maintient d'un changement d'etat, nous utilis
 
 Nous devrons etre capable de faire varier la puissance de frappe de chacune des percussions, il faut donc varier l'alimentation a l'aide de pca9685.
 l'idée est de simplement d' atribuer une sortie pour une ou plusieurs note midi,les sorties 0 a 15 seront gerré par le pca1, les sorties 16 a 32 seront géré par le pca2 etc...
-<img src="https://raw.githubusercontent.com/glloq/MidiPercussion/main/img/branchement%20pwm.png" alt="Your image title" width=50% height=50%/>
+<img src="https://raw.githubusercontent.com/glloq/MidiPercussion/main/img/branchement%20pwm.png" alt="Your image title" width=80% height=80%/>
 
 
 ### Choix mecanique 
@@ -83,7 +83,7 @@ il y a plusieurs facons de faire l'assemblage des baguettes mais il y a plusieur
 - le bruit du solenoide => il faut utiliser un systeme pour amortir le retour de baguette
 - il faut permettre une maintenance rapide => reglage de l'angle, remplacement de baguette etc
 
-  ![Schema baguettes](https://raw.githubusercontent.com/glloq/MidiPercussion/main/img/baguette.png?raw=true)
+<img src="https://raw.githubusercontent.com/glloq/MidiPercussion/main/img/baguette.png" alt="Your image title" width=50% height=50%/>
 
 
 ## Partie code
