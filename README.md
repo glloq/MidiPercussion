@@ -17,6 +17,7 @@ Pour toute action qui necessite le maintient d'un changement d'etat, nous utilis
 Nous devrons etre capable de faire varier la puissance de frappe de chacune des percussions, il faut donc varier l'alimentation a l'aide de pca9685.
 l'idée est de simplement d' atribuer une sortie pour une ou plusieurs note midi,les sorties 0 a 15 seront gerré par le pca1, les sorties 16 a 32 seront géré par le pca2 etc...
 <img src="https://raw.githubusercontent.com/glloq/MidiPercussion/main/img/branchement%20pwm.png" alt="Your image title" width=80% height=80%/>
+<img src="https://github.com/glloq/MidiPercussion/blob/main/img/pwmSolenoid.png" alt="Your image title" width=50% height=50%/>
 
 
 ### Choix mecanique 
@@ -48,8 +49,10 @@ struc midiNote{
 
 ```
 
-avec cette organisation nous pouvons simplement declarer les differentes notes percussion et leurs parametres.  
-On pourra associer plusieurs numero midi avec une seule sortie/numero outputPin.
+Avec cette organisation nous pouvons simplement declarer les differentes notes percussion et leurs parametres.  
+On pourra associer plusieurs numero midi avec une seule sortie/numero outputPin d'un meme pca.
+
+
 
 
 
