@@ -2,63 +2,9 @@
 > [!NOTE]
 > rien n'est fait ni testé, c'est un debut de travail!
 
-
 # MidiPercussion
-a way to make a midi controled percusion system with solenoids an servomotors
-
-
-# Percussion Standard GM (Canal 10)
-
-| Numéro MIDI | Instrument              | exemple pca output number |
-|-------------|--------------------------|-------------------------|
-| 35          | Acoustic Bass Drum       |:heavy_check_mark: 0 |
-| 36          | Bass Drum 1              |:heavy_check_mark: 0 |
-| 37          | Side Stick               | :heavy_check_mark: 1 |
-| 38          | Acoustic Snare           | :heavy_check_mark: 2 |
-| 39          | Hand Clap                | :heavy_check_mark: 3 |
-| 40          | Electric Snare           | :heavy_check_mark: 2 |
-| 41          | Low Floor Tom            | :heavy_check_mark: 3 |
-| 42          | Closed Hi-Hat            | :heavy_check_mark: 4 |
-| 43          | High Floor Tom           | :heavy_check_mark: 5 |
-| 44          | Pedal Hi-Hat             | :heavy_check_mark: 6 |
-| 45          | Low Tom                  | :heavy_check_mark: 3 |
-| 46          | Open Hi-Hat              | :heavy_check_mark: 7 |
-| 47          | Low-Mid Tom              | :heavy_check_mark: 8 |
-| 48          | Hi-Mid Tom               | :heavy_check_mark: 9 |
-| 49          | Crash Cymbal 1           | :heavy_check_mark: 10 |
-| 50          | High Tom                 | :heavy_check_mark: 11 |
-| 51          | Ride Cymbal 1            | :heavy_check_mark: 12 |
-| 52          | Chinese Cymbal           | :heavy_check_mark: 11 |
-| 53          | Ride Bell                | :heavy_check_mark: 12 |
-| 54          | Tambourine               |:heavy_check_mark: 13 |
-| 55          | Splash Cymbal            | :heavy_check_mark: 14 |
-| 56          | Cowbell                  |:heavy_check_mark: 15 |
-| 57          | Crash Cymbal 2           |:heavy_check_mark: 10 |
-| 58          | Vibraslap                | |
-| 59          | Ride Cymbal 2            |:heavy_check_mark: 12 |
-| 60          | Hi Bongo                 | |
-| 61          | Low Bongo                | |
-| 62          | Mute Hi Conga            | |
-| 63          | Open Hi Conga            | |
-| 64          | Low Conga                | |
-| 65          | High Timbale             | |
-| 66          | Low Timbale              | |
-| 67          | High Agogo               | |
-| 68          | Low Agogo                | |
-| 69          | Cabasa                   | |
-| 70          | Maracas                  | 16 |
-| 71          | Short Whistle            | |
-| 72          | Long Whistle             | |
-| 73          | Short Guiro              | |
-| 74          | Long Guiro               | |
-| 75          | Claves                   | |
-| 76          | Hi Wood Block            | 17 |
-| 77          | Low Wood Block           | 18 |
-| 78          | Mute Cuica               | |
-| 79          | Open Cuica               | |
-| 80          | Mute Triangle            | 19 |
-| 81          | Open Triangle            | 20 |
-
+l'objectif est de permettre de jouer de la batteries et autre percussion en utilisant [la norme General Midi Drum](https://en.wikipedia.org/wiki/General_MIDI#Percussion)
+nous aurons donc besoin d'actionner differentes percussions
 
 ## Actionneurs 
 
@@ -81,15 +27,15 @@ il y a plusieurs facons de faire l'assemblage des baguettes mais il y a plusieur
 - temps pour action => le temps/ deplacement necessaire pour actionner la note
 - le temps entre 2 actions => temps minimum entre deux actions
 - le bruit du solenoide => il faut utiliser un systeme pour amortir le retour de baguette
-- il faut permettre une maintenance rapide => reglage de l'angle, remplacement de baguette etc
+- il faut permettre une maintenance rapide => reglage de l'angle d'attaque, remplacement pieces ou de baguette, etc...
 
-<img src="https://raw.githubusercontent.com/glloq/MidiPercussion/main/img/baguette.png" alt="Your image title" width=50% height=50%/>
+<img src="https://raw.githubusercontent.com/glloq/MidiPercussion/main/img/baguette.png" alt="Your image title" width=30% height=30%/>
 
 
 ## Partie code
 
 Un solenoide sera controlé via le pca9685 pour moduler la puissance de frappe en fonction de la velocité de la note midi recue.
-    
+  
 Pour permettre une adaptation simple, nous utiliserons une structure pour regroupper toutes les information pour chacune des sorties/note midi.
 ```
 struc midiNote{
@@ -98,13 +44,12 @@ struc midiNote{
   byte pcaAddress;      // Adresse I2C du PCA9685 (0x40 par défaut, mais peut changer)
   int pwmMin;           // Valeur minimale du signal PWM (par exemple, 1000)
   unsigned long activeTime; // Temps actif max (en millisecondes) de la sortie lorsqu'elle est activée
-  bool isActive;        // Statut indiquant si la sortie est actuellement active ou non
-
 }
 
 ```
 
-avec cette organisation nous pouvons simplement declarer les differentes notes percussion et leurs parametres.
+avec cette organisation nous pouvons simplement declarer les differentes notes percussion et leurs parametres.  
+On pourra associer plusieurs numero midi avec une seule sortie/numero outputPin.
 
 
 
